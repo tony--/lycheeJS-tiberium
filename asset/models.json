@@ -1,0 +1,327 @@
+{
+	"Building": {
+
+		"Barrack": {
+
+			"health": 400,
+			"power":   10,
+
+			"grid": {
+				"x": 3,
+				"y": 3
+			},
+
+			"spritemap": {
+				"default" : {
+					"from":  0,
+					"to":    9,
+					"animated": true,
+					"fps":  25
+				},
+				"destroy": {
+					"from": 10,
+					"to":   20,
+					"animated": false
+				},
+				"build": {
+					"from": 21,
+					"to":   40,
+					"animated": true
+				}
+			}
+
+		},
+
+		"Garage": {
+
+			"health": 400,
+			"power":   20,
+
+			"grid": {
+				"x": 3,
+				"y": 3
+			},
+
+			"spritemap": {
+				"default" : {
+					"from":  0,
+					"to":    0
+				},
+				"destroy": {
+					"from": 14,
+					"to":   14
+				},
+				"active": {
+					"from":  0,
+					"to":   13,
+					"animated": true,
+					"fps":  25
+				},
+				"build": {
+					"from": 21,
+					"to":   40,
+					"animated": true
+				}
+			}
+
+		}
+
+	},
+
+	"Unit": {
+
+		"A10": {
+
+			"health": 400,
+
+			"speed":  7,
+
+			"terrain": "air",
+
+			"spritemap": {
+
+				"default": {
+					"from":  0,
+					"to":   31
+				}
+
+			}
+
+		},
+
+		"C17": {
+
+			"health": 1200,
+
+			"speed":  3,
+
+			"terrain": "air",
+
+			"spritemap": {
+
+				"default": {
+					"from":  0,
+					"to":   31
+				}
+
+			}
+
+		},
+
+ 		"Boat": {
+
+			"health": 2000,
+
+			"speed":  0,
+
+			"terrain": "water",
+
+			"spritemap": {
+
+				"left": {
+					"from":  0,
+					"to":   31
+				},
+
+				"leftdestroy1": {
+					"from": 32,
+					"to":   63
+				},
+
+				"leftdestroy2": {
+					"from": 64,
+					"to":   95
+				},
+
+				"right": {
+					"from":  96,
+					"to":   127
+				},
+
+				"rightdestroy1": {
+					"from":  96,
+					"to":   127
+				},
+
+				"rightdestroy2": {
+					"from":  128,
+					"to":    159
+				}
+
+			}
+
+		},
+
+
+
+
+		"APC": {
+
+			"health": 300,
+
+			"speed":  2,
+
+			"spritemap": {
+
+				"default": {
+					"from":  0,
+					"to":   31
+				}
+
+			}
+
+		},
+
+ 		"Artillery": {
+
+			"health": 400,
+
+			"speed":  2,
+
+			"spritemap": {
+
+				"default": {
+					"from":  0,
+					"to":   31
+				}
+
+			}
+
+		},
+
+ 		"Bike": {
+
+			"health": 300,
+
+			"speed":  4,
+
+			"spritemap": {
+
+				"default": {
+					"from":  0,
+					"to":   31
+				}
+
+			}
+
+		},
+
+ 		"Buggy": {
+
+			"health": 350,
+
+			"speed":  4,
+
+			"spritemap": {
+
+				"default": {
+					"from":  0,
+					"to":   31
+				}
+
+			}
+
+		},
+
+ 		"Jeep": {
+
+			"health": 350,
+
+			"speed":  4,
+
+			"spritemap": {
+
+				"default": {
+					"from":  0,
+					"to":   31
+				}
+
+			}
+
+		},
+
+		"StealthTank": {
+
+			"health": 500,
+
+			"speed":  4,
+
+			"spritemap": {
+
+				"default": {
+					"from":  0,
+					"to":   31
+				}
+
+			}
+
+		},
+
+		"LightTank": {
+
+			"health": 500,
+
+			"speed":  3,
+
+			"spritemap": {
+
+				"default": {
+					"from":  0,
+					"to":   31
+				},
+
+				"cannon": {
+					"from": 32,
+					"to":   63
+				}
+
+			}
+
+		},
+
+		"HeavyTank": {
+
+			"health": 1000,
+
+			"speed":  2,
+
+			"spritemap": {
+
+				"default": {
+					"from":  0,
+					"to":   31
+				},
+
+				"cannon": {
+					"from": 32,
+					"to":   63
+				}
+
+			}
+
+		},
+
+		"MammothTank": {
+
+			"health": 2000,
+
+			"speed":  1,
+
+			"spritemap": {
+
+				"default": {
+					"from":  0,
+					"to":   31
+				},
+
+				"cannon": {
+					"from": 32,
+					"to":   63
+				}
+
+			}
+
+		}
+
+	}
+}

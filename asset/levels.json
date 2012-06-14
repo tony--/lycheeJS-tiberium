@@ -1,0 +1,93 @@
+{
+	"gdi1": {
+
+		"player": {
+		
+			"credits": 5000,
+
+			"belongings": [{
+				"id": "Barrack",
+				"x": 20,
+				"y": 12
+			}, {
+				"id": "Garage",
+				"x": 24,
+				"y": 12
+			}]
+
+		},
+
+		"com": {
+
+			"credits": 5000,
+
+			"belongings": [{
+				"id": "MammothTank",
+				"x": 10,
+				"y": 5
+			}, {
+				"id": "MammothTank",
+				"x": 12,
+				"y": 5
+			}, {
+ 				"id": "MammothTank",
+				"x": 14,
+				"y": 5
+			}, {
+				"id": "Artillery",
+				"x": 10,
+				"y": 8
+			}, {
+				"id": "Artillery",
+				"x": 12,
+				"y": 8
+			}, {
+				"id": "APC",
+				"x": 14,
+				"y": 8
+			}, {
+				"id": "APC",
+				"x": 16,
+				"y": 8
+			}, {
+				"id": "Bike",
+				"x": 10,
+				"y": 11
+			}, {
+				"id": "Bike",
+				"x": 12,
+				"y": 11
+			}, {
+				"id": "LightTank",
+				"x": 14,
+				"y": 11
+			}, {
+				"id": "LightTank",
+				"x": 16,
+				"y": 11
+			}, {
+				"id": "StealthTank",
+				"x": 10,
+				"y": 13
+			}, {
+ 				"id": "StealthTank",
+				"x": 12,
+				"y": 13
+			}, {
+ 				"id": "A10",
+				"x": 20,
+				"y": 5
+			}, {
+				"id": "A10",
+				"x": 24,
+				"y": 5
+			}, {
+				"id": "C17",
+				"x": 20,
+				"y": 8
+			}]
+		
+		}
+
+	}
+}

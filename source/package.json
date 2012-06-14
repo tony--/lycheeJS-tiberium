@@ -1,0 +1,22 @@
+{
+	"state": {
+		"Game": [ "js" ],
+		"Menu": [ "js" ]
+	},
+	"logic": {
+		"Hitmap": [ "js" ],
+		"Pathfinder": [ "js" ],
+		"Main": [ "js" ]
+	},
+	"entity": {
+		"Building": [ "js" ],
+		"Text": [ "js" ],
+		"Unit": [ "js" ]
+	},
+	"Data": [ "js" ],
+	"DeviceSpecificHacks": [ "js" ],
+	"Jukebox": [ "js" ],
+	"Main": [ "js", "css" ],
+	"Parser": [ "js" ],
+	"Renderer": [ "js" ]
+}

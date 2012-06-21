@@ -2,7 +2,6 @@
 lychee.define('game.Main').requires([
 	'lychee.Font',
 	'lychee.Input',
-	'lychee.Preloader',
 	'game.Data',
 	'game.Jukebox',
 	'game.Parser',
@@ -10,7 +9,7 @@ lychee.define('game.Main').requires([
 	'game.state.Game',
 	'game.state.Menu',
 	'game.DeviceSpecificHacks',
-	'game.logic.Main'
+	'game.logic.Logic'
 ]).includes([
 	'lychee.game.Main'
 ]).exports(function(lychee, global) {
@@ -158,7 +157,7 @@ lychee.define('game.Main').requires([
 
 			this.data = new game.Data(this);
 			this.jukebox = new game.Jukebox(this);
-			this.logic = new game.logic.Main(this);
+			this.logic = new game.logic.Logic(this);
 
 			this.input = new lychee.Input({
 				delay: 0,
@@ -222,3 +221,5 @@ lychee.define('game.Main').requires([
 	return Class;
 
 });
+
+console.log('LOADED', lychee.getEnvironment());

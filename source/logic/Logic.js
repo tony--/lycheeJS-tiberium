@@ -1,5 +1,5 @@
 
-lychee.define('game.logic.Main').requires([
+lychee.define('game.logic.Logic').requires([
 	'game.logic.Hitmap',
 	'game.logic.Pathfinder'
 ]).exports(function(lychee, global) {

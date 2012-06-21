@@ -4,13 +4,10 @@
 	<title>Command and Conquer Tiberium Wars (HTML5)</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<!-- core and platform-specific Builder -->
+	<!-- required libraries -->
 	<script src="./external/lycheeJS/lychee/core.js"></script>
-	<script src="./external/lycheeJS/lychee/platform/html/Builder.js"></script>
-
-	<!-- build start -->
-	<script src="./source/Main.js"></script>
-	<link rel="stylesheet" href="./source/Main.css">
+	<script src="./external/lycheeJS/lychee/Builder.js"></script>
+	<script src="./external/lycheeJS/lychee/platform/html/Preloader.js"></script>
 
 </head>
 <body>
@@ -19,16 +16,25 @@
 
 <script>
 // Set this to true to see lychee debug messages
-lychee.debug = false;
+lychee.debug = true;
+
 
 lychee.rebase({
 	lychee: './external/lycheeJS/lychee',
 	game: "./source"
 });
 
-lychee.build('game.Main', {
-	platform: 'html'
-}, function(lychee) {
+
+lychee.tag({
+	platform: [ 'html' ]
+});
+
+
+lychee.define('game.Init').requires([
+	'game.Main'
+]).exports(function(lychee, global) {
+
+console.log("INIT");
 
 	// This will allow you to use this URL schema:
 	// /url/to/boilerplate/#music=true,sound=false
@@ -60,7 +66,10 @@ lychee.build('game.Main', {
 
 	this.GAME = new game.Main(settings);
 
-}, this);
+});
+
+
+lychee.build();
 </script>
 </body>
 </html>    

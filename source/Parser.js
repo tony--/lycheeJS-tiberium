@@ -1,7 +1,5 @@
 
-lychee.define('game.Parser').requires([
-	'lychee.Preloader'
-]).includes([
+lychee.define('game.Parser').includes([
 	'lychee.Events',
 ]).exports(function(lychee, global) {
 
@@ -42,7 +40,6 @@ lychee.define('game.Parser').requires([
 
 			}, this);
 
-			this.preloader.bind('ready', this.__addSheetsToModels, this);
 
 			for (var groupId in models) {
 
